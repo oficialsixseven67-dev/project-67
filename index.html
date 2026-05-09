@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>67 SIXSEVEN | AVALANCHE</title>
+    <style>
+        :root { --main: #E84142; --bg: #000; }
+        body, html { margin: 0; padding: 0; width: 100%; background: var(--bg); color: #fff; font-family: 'Arial Black', sans-serif; overflow-x: hidden; }
+
+        #overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-3deg) translateX(-5px); }
+            75% { transform: rotate(3deg) translateX(5px); }
+        }
+        .shake { animation: shake 0.4s ease-in-out infinite; }
+
+        #main-content { display: none; text-align: center; padding-bottom: 100px; }
+
+        .main-gif { width: 280px; border: 4px solid var(--main); border-radius: 20px; box-shadow: 0 0 30px rgba(232, 65, 66, 0.5); margin: 40px 0; }
+        
+        .contract-container {
+            margin: 30px auto;
+            padding: 15px;
+            display: inline-block;
+        }
+        .contract-text {
+            color: var(--main);
+            font-size: 1.2rem;
+            word-break: break-all;
+            text-shadow: 0 0 10px var(--main);
+            display: block;
+        }
+
+        .video-container { width: 90%; max-width: 500px; margin: 20px auto; border: 2px solid var(--main); border-radius: 15px; overflow: hidden; box-shadow: 0 0 20px var(--main); }
+        video { width: 100%; display: block; }
+
+        .btn {
+            background: var(--main); color: #fff; padding: 20px 60px; font-size: 1.8rem; border: none; cursor: pointer;
+            border-radius: 10px; font-weight: bold; text-decoration: none; display: inline-block;
+        }
+
+        .marquee { display: flex; overflow: hidden; background: var(--main); color: #fff; padding: 15px 0; font-size: 1.5rem; text-transform: uppercase; }
+        .m-left { animation: scroll-l 10s linear infinite; white-space: nowrap; flex-shrink: 0; }
+        @keyframes scroll-l { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        .grid-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; max-width: 800px; margin: 50px auto; padding: 0 20px; }
+        .btn-secondary { border: 2px solid var(--main); color: var(--main); padding: 12px; text-decoration: none; font-size: 0.9rem; border-radius: 5px; transition: 0.3s; }
+        .btn-secondary:hover { background: var(--main); color: #fff; }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+    <div id="overlay">
+        <p style="color: #666; margin-bottom: 20px; letter-spacing: 2px;">AVALANCHE NETWORK DETECTED</p>
+        <button class="btn shake" onclick="enterSite()">✋🏻 6 CLICK 7 ✋🏻</button>
+        <p style="margin-top: 20px; font-size: 0.8rem; color: var(--main);">"Click to load the full experience."</p>
+    </div>
+
+    <div id="main-content">
+        <div class="marquee"><div class="m-left">BUY $67 • AVALANCHE • TRADER JOE • TAX 0% • 67 TRILLION SUPPLY • BUY $67 • AVALANCHE • </div></div>
+        
+        <h1 class="shake" style="color: var(--main); font-size: 5rem; margin-top: 40px;">$67</h1>
+        
+        <img src="67.gif" alt="67" class="main-gif">
+
+        <div style="max-width: 800px; margin: 40px auto; padding: 20px; border: 1px solid rgba(232, 65, 66, 0.3); border-radius: 10px; background-color: rgba(0,0,0,0.2);">
+            <p style="font-size: 1.1rem; color: #fff; line-height: 1.5; font-weight: 500; text-align: center;">
+                $67 is a memecoin with <span style="color: #e84142;">no intrinsic value</span> or expectation of financial return. 
+                There is no formal team or defined roadmap. 
+                The token is <span style="color: #e84142;">completely useless</span> and intended for entertainment purposes only.
+            </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 20px auto; padding: 20px; border: 1px solid rgba(232, 65, 66, 0.3); border-radius: 10px; background-color: rgba(0,0,0,0.2);">
+            <h2 style="color: var(--main);">SUPPLY: 67.000.000.000.000 | TAX: 0% </h2>
+            <p style="font-size: 1.1rem; color: #fff; line-height: 1.5; font-weight: 500; text-align: center;">
+                $67 is "so" advanced that it is <span style="color: #e84142;">deflationary</span> (it vanishes faster than your dignity). 
+                Born from pure chaos, with no funds and no promises, $67 belongs to the community. 
+                Will it grow? That's up to you, because we have no idea.
+            </p>
+        </div>
+
+        <div class="contract-container shake">
+            <span class="contract-text">CA: 0x676D1bE3B820d6C43442401C16cdc3eAb914833c</span>
+        </div>
+
+        <div class="video-container">
+            <video id="myVideo" loop>
+                <source src="67.mp4" type="video/mp4">
+            </video>
+        </div>
+
+<div class="sarcastic-box">
+    <p>Think you're smart?</p>
+    <a href="https://www.google.com/search?q=67" target="_blank" class="search-btn">
+        Google "67" and prove yourself wrong.
+    </a>
+    <p><small>It’s only a click away. Don't be shy.</small></p>
+</div>
+
+<style>
+    .sarcastic-box {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        max-width: 300px;
+        margin: 20px auto;
+        background-color: #1a1a1a;
+        color: #fff;
+    }
+    .search-btn {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: 0.3s;
+    }
+    .search-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+</style>
+
+
+
+
+        <div style="margin: 40px 0;">
+            <a href="https://lfj.gg/avalanche/trade?outputCurrency=0x676D1bE3B820d6C43442401C16cdc3eAb914833c" class="btn shake">BUY ON TRADER JOE</a>
+        </div>
+
+        <div class="grid-links">
+            <a href="#" class="btn-secondary">DEXTOOLS</a>
+            <a href="#" class="btn-secondary">DEXSCREENER</a>
+            <a href="#" class="btn-secondary">GECKOTERMINAL</a>
+            <a href="https://snowtrace.io/address/0x676D1bE3B820d6C43442401C16cdc3eAb914833c/" class="btn-secondary">SNOWTRACE</a>
+            <a href="t.me/oficialsixseven67" class="btn-secondary">TELEGRAM</a>
+            <a href="https://x.com/sixsevenavax67" class="btn-secondary">X (TWITTER)</a>
+        </div>
+    </div>
+
+    <script>
+        function enterSite() {
+            const video = document.getElementById('myVideo');
+            document.getElementById('overlay').classList.add('hidden');
+            document.getElementById('main-content').style.display = 'block';
+            document.body.style.overflow = "auto";
+            video.play().catch(e => console.log(e));
+        }
+    </script>
+</body>
+</html>
