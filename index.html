@@ -183,12 +183,76 @@
             video.play().catch(e => console.log(e));
         }
     </script>
-<a href="mailto:contact@sixseven0x67.online">
-    Business & Support: contact@sixseven0x67.online
-</a>
+<footer>
+    <div class="avax-footer-container">
+        <div class="avax-footer-section">
+            <span class="avax-badge">AVALANCHE NETWORK</span>
+            <p class="avax-brand">Mechanism Studio Dev</p>
+        </div>
+        
+        <div class="avax-footer-section">
+            <h4>Contact</h4>
+            <p><a href="mailto:contact@sixseven0x67.online">contact@sixseven0x67.online</a></p>
+        </div>
 
-<a href="mailto:oficial.sixseven67@gmail.com">
-    Primary Inquiry: oficial.sixseven67@gmail.com
-</a>
+        <div class="avax-footer-section">
+            <h4>Official Support</h4>
+            <p><a href="mailto:oficial.sixseven67@gmail.com">oficial.sixseven67@gmail.com</a></p>
+        </div>
+    </div>
+
+    <style>
+        footer {
+            background-color: #0a0a0a;
+            border-top: 1px solid #e84142; /* Vermelho Avalanche */
+            padding: 40px 20px;
+            font-family: 'Inter', sans-serif, Arial;
+        }
+        .avax-footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+        .avax-footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        .avax-badge {
+            background: rgba(233, 65, 66, 0.1);
+            color: #e84142;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+        .avax-brand {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .avax-footer-section h4 {
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 0 0 12px 0;
+            letter-spacing: 1.5px;
+        }
+        .avax-footer-section a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+        .avax-footer-section a:hover {
+            color: #e84142; /* Link brilha em vermelho no hover */
+        }
+    </style>
+</footer>
 </body>
 </html>
