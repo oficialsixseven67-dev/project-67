@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>67 SIXSEVEN | AVALANCHE</title>
+    <title>67 SIXSEVEN | AVALANCHE & BSC</title>
     <style>
-        :root { --main: #E84142; --bg: #000; }
+        :root { --main: #E84142; --bg: #000; --bnb: #F3BA2F; }
         body, html { margin: 0; padding: 0; width: 100%; background: var(--bg); color: #fff; font-family: 'Arial Black', sans-serif; overflow-x: hidden; }
 
         #overlay {
@@ -30,26 +30,18 @@
 
         .main-gif { width: 280px; border: 4px solid var(--main); border-radius: 20px; box-shadow: 0 0 30px rgba(232, 65, 66, 0.5); margin: 40px 0; }
         
-        .contract-container {
-            margin: 30px auto;
-            padding: 15px;
-            display: inline-block;
-        }
-        .contract-text {
-            color: var(--main);
-            font-size: 1.2rem;
-            word-break: break-all;
-            text-shadow: 0 0 10px var(--main);
-            display: block;
-        }
+        .contract-container { margin: 30px auto; padding: 15px; display: inline-block; }
+        .contract-text { color: var(--main); font-size: 1.2rem; word-break: break-all; text-shadow: 0 0 10px var(--main); display: block; margin-bottom: 15px; }
+        .bnb-text { color: var(--bnb); font-size: 1.2rem; word-break: break-all; text-shadow: 0 0 10px var(--bnb); display: block; }
 
         .video-container { width: 90%; max-width: 500px; margin: 20px auto; border: 2px solid var(--main); border-radius: 15px; overflow: hidden; box-shadow: 0 0 20px var(--main); }
         video { width: 100%; display: block; }
 
         .btn {
-            background: var(--main); color: #fff; padding: 20px 60px; font-size: 1.8rem; border: none; cursor: pointer;
-            border-radius: 10px; font-weight: bold; text-decoration: none; display: inline-block;
+            background: var(--main); color: #fff; padding: 20px 40px; font-size: 1.5rem; border: none; cursor: pointer;
+            border-radius: 10px; font-weight: bold; text-decoration: none; display: inline-block; margin: 10px;
         }
+        .btn-bnb { background: var(--bnb); color: #000; }
 
         .marquee { display: flex; overflow: hidden; background: var(--main); color: #fff; padding: 15px 0; font-size: 1.5rem; text-transform: uppercase; }
         .m-left { animation: scroll-l 10s linear infinite; white-space: nowrap; flex-shrink: 0; }
@@ -65,13 +57,13 @@
 <body>
 
     <div id="overlay">
-        <p style="color: #666; margin-bottom: 20px; letter-spacing: 2px;">AVALANCHE NETWORK DETECTED</p>
+        <p style="color: #666; margin-bottom: 20px; letter-spacing: 2px;">AVALANCHE & BSC NETWORKS DETECTED</p>
         <button class="btn shake" onclick="enterSite()">✋🏻 6 CLICK 7 ✋🏻</button>
         <p style="margin-top: 20px; font-size: 0.8rem; color: var(--main);">"Click to load the full experience."</p>
     </div>
 
     <div id="main-content">
-        <div class="marquee"><div class="m-left">BUY $67 • AVALANCHE • TRADER JOE • TAX 0% • 67 TRILLION SUPPLY • BUY $67 • AVALANCHE • </div></div>
+        <div class="marquee"><div class="m-left">BUY $67 • AVALANCHE • BSC • NO TAX • 67 TRILLION SUPPLY • BUY $67 • AVALANCHE • </div></div>
         
         <h1 class="shake" style="color: var(--main); font-size: 5rem; margin-top: 40px;">$67</h1>
         
@@ -89,86 +81,28 @@
             <h2 style="color: var(--main);">SUPPLY: 67.000.000.000.000 | TAX: 0% </h2>
             <p style="font-size: 1.1rem; color: #fff; line-height: 1.5; font-weight: 500; text-align: center;">
                 $67 is "so" advanced that it is <span style="color: #e84142;">deflationary</span> (it vanishes faster than your dignity). 
-                Born from pure chaos, with no funds and no promises, $67 belongs to the community. 
-                Will it grow? That's up to you, because we have no idea.
+                Born from pure chaos, with no funds and no promises, $67 belongs to the community.
             </p>
         </div>
 
         <div class="contract-container shake">
             <span class="contract-text">AVALANCHE CA: 0x676D1bE3B820d6C43442401C16cdc3eAb914833c</span>
+            <span class="bnb-text">BNB CA: 0x6749cEA315027BdF3C4A296620E36bd7BD4B6675</span>
         </div>
-<!-- Alerta de Limite Anti-Erro -->
-<div style="background: #1a1a1a; color: #fff; padding: 15px; border: 2px solid #e84142; border-radius: 10px; max-width: 500px; font-family: sans-serif; text-align: center;">
-    <strong style="color: #e84142; font-size: 18px; display: block; margin-bottom: 10px;">🚨 ATTENTION / IMPORTANTE</strong>
-    
-    <p style="margin: 0 0 10px 0; font-size: 15px; font-weight: bold;">
-        MAXIMUM BUY LIMIT PER TRANSACTION:
-    </p>
 
-    <div style="background: #e84142; color: #fff; font-size: 20px; font-weight: 900; padding: 8px; border-radius: 5px; letter-spacing: 1px;">
-        8,500,000,000 tokens
-    </div>
+        <div style="margin: 20px 0;">
+            <a href="https://lfj.gg/avalanche/trade?outputCurrency=0x676D1bE3B820d6C43442401C16cdc3eAb914833c" class="btn shake">BUY ON TRADER JOE</a>
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x6749cEA315027BdF3C4A296620E36bd7BD4B6675" class="btn btn-bnb shake">BUY ON PANCAKESWAP</a>
+        </div>
 
-    <p style="margin: 10px 0 0 0; font-size: 13px; color: #bbb; line-height: 1.4;">
-        Do NOT try to buy more than <strong>8.5 Billion</strong> at once or the transaction will <strong>FAIL</strong>.<br>
-        <span style="color: #666; font-style: italic;">(This limit will be removed after contract renouncement)</span>
-    </p>
-</div>
         <div class="video-container">
             <video id="myVideo" loop>
                 <source src="67.mp4" type="video/mp4">
             </video>
         </div>
 
-<div class="sarcastic-box">
-    <p>Think you're smart?</p>
-    <a href="https://www.google.com/search?q=67" target="_blank" class="search-btn">
-        Google "67" and prove yourself wrong.
-    </a>
-    <p><small>It’s only a click away. Don't be shy.</small></p>
-</div>
-
-<style>
-    .sarcastic-box {
-        font-family: sans-serif;
-        text-align: center;
-        padding: 20px;
-        border: 1px solid #333;
-        border-radius: 8px;
-        max-width: 300px;
-        margin: 20px auto;
-        background-color: #1a1a1a;
-        color: #fff;
-    }
-    .search-btn {
-        display: inline-block;
-        margin: 10px 0;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 4px;
-        transition: 0.3s;
-    }
-    .search-btn:hover {
-        background-color: #0056b3;
-        transform: scale(1.05);
-    }
-</style>
-
-
-
-
-        <div style="margin: 40px 0;">
-            <a href="https://lfj.gg/avalanche/trade?outputCurrency=0x676D1bE3B820d6C43442401C16cdc3eAb914833c" class="btn shake">BUY ON TRADER JOE</a>
-        </div>
-
         <div class="grid-links">
             <a href="#" class="btn-secondary">DEXTOOLS</a>
-            <a href="#" class="btn-secondary">DEXSCREENER</a>
-            <a href="#" class="btn-secondary">GECKOTERMINAL</a>
-            <a href="https://snowtrace.io/address/0x676D1bE3B820d6C43442401C16cdc3eAb914833c/" class="btn-secondary">SNOWTRACE</a>
             <a href="https://t.me/oficialsixseven67" class="btn-secondary">TELEGRAM</a>
             <a href="https://x.com/sixsevenavax67" class="btn-secondary">X (TWITTER)</a>
         </div>
@@ -183,76 +117,5 @@
             video.play().catch(e => console.log(e));
         }
     </script>
-<footer>
-    <div class="avax-footer-container">
-        <div class="avax-footer-section">
-            <span class="avax-badge">AVALANCHE NETWORK</span>
-            <p class="avax-brand">Mechanism Studio Dev</p>
-        </div>
-        
-        <div class="avax-footer-section">
-            <h4>Contact</h4>
-            <p><a href="mailto:contact@sixseven0x67.online">contact@sixseven0x67.online</a></p>
-        </div>
-
-        <div class="avax-footer-section">
-            <h4>Official Support</h4>
-            <p><a href="mailto:oficial.sixseven67@gmail.com">oficial.sixseven67@gmail.com</a></p>
-        </div>
-    </div>
-
-    <style>
-        footer {
-            background-color: #0a0a0a;
-            border-top: 1px solid #e84142; /* Vermelho Avalanche */
-            padding: 40px 20px;
-            font-family: 'Inter', sans-serif, Arial;
-        }
-        .avax-footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            gap: 30px;
-        }
-        .avax-footer-section {
-            flex: 1;
-            min-width: 250px;
-        }
-        .avax-badge {
-            background: rgba(233, 65, 66, 0.1);
-            color: #e84142;
-            font-size: 11px;
-            font-weight: bold;
-            padding: 4px 8px;
-            border-radius: 4px;
-            letter-spacing: 1px;
-        }
-        .avax-brand {
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: 700;
-            margin-top: 10px;
-            margin-bottom: 0;
-        }
-        .avax-footer-section h4 {
-            color: #666;
-            font-size: 12px;
-            text-transform: uppercase;
-            margin: 0 0 12px 0;
-            letter-spacing: 1.5px;
-        }
-        .avax-footer-section a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 15px;
-            transition: color 0.2s ease;
-        }
-        .avax-footer-section a:hover {
-            color: #e84142; /* Link brilha em vermelho no hover */
-        }
-    </style>
-</footer>
 </body>
 </html>
